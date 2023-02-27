@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300&family=Public+Sans:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #010101;
+  --white: #ffffff;
+  --gray: #c7c7c7;
+}
+
+/* header  */
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--background);
+  color: var(--white);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hamburger {
+  margin: 10px auto;
+  position: absolute;
+  left: 3%;
+}
+
+.company-logo {
+  margin: 10px auto;
+  position: absolute;
+  right: 7%;
+}
+
+#mobiletopnav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #a9a9fc;
+}
+
+#mobiletopnav a {
+  text-decoration: none;
+  color: var(--background);
+  font-size: 20px;
+  font-weight: 800;
+  margin: 20px auto;
+}

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Ville website</title>
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <link rel="icon" href="/images/icon/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="head">
+        <div class="hamburger">
+          <a href="/menu.html">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </a>
+        </div>
+
+        <img
+          class="company-logo"
+          src="/images/icon/Logo.svg"
+          alt="company Logo"
+        />
+
+        <div class="list">
+          <ul>
+            <li>
+              <a href="#">Movies</a
+              ><span class="material-symbols-outlined">expand_more</span>
+            </li>
+            <li>
+              <a href="#">Tv Show</a
+              ><span class="material-symbols-outlined">expand_more</span>
+            </li>
+            <li>
+              <a href="#">Genres</a
+              ><span class="material-symbols-outlined">expand_more</span>
+            </li>
+            <li>
+              <a href="#">Web Series</a
+              ><span class="material-symbols-outlined">expand_more</span>
+            </li>
+            <li>
+              <a href="#">Anime</a
+              ><span class="material-symbols-outlined">expand_more</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search">
+          <input type="search" name="search-bar" placeholder="search" /><span
+            class="material-symbols-outlined"
+            >search
+          </span>
+        </div>
+
+        <div class="details">
+          <button>Subscribe</button>
+          <p>LOGIN</p>
+        </div>
+      </nav>
+    </header>
+    <!-- header ends -->
+
+    <!-- body starts -->
+    <main>
+      <section>
+        <div class="slideshow-container">
+          <div class="theslides fade">
+            <img
+              src="/images/carousel-pictures/6-underground.svg"
+              alt="title: 6-underground"
+            />
+          </div>
+
+          <div class="theslides fade">
+            <img
+              src="/images/carousel-pictures/JohnWick.svg"
+              alt="title: JohnWick"
+            />
+          </div>
+
+          <div class="theslides fade">
+            <img
+              src="/images/carousel-pictures/Fast and Furious 9 Wallpaper.svg"
+              alt="title: Fast and Furious 9 Wallpaper"
+            />
+          </div>
+
+          <div class="theslides fade">
+            <img
+              src="/images/carousel-pictures/ChrisHemsworth.svg"
+              alt="title: ChrisHemsworth"
+            />
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="indicator">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </section>
+      <!-- carousel section ends -->
+
+      <!-- movie card section -->
+      <section class="latest">
+        <div class="headd">
+          <h3>Latest and trending</h3>
+          <p>View all</p>
+        </div>
+        <div class="movie-cards">
+          <div class="card1">
+            <img
+              src="/images/latest and trending/Stanger Things.svg"
+              alt="Title: Stranger Things"
+            />
+            <div class="detail">
+              <p>USA 2016 - Current</p>
+              <h4>Stranger Things</h4>
+              <p>Action,</p>
+              <p>Adventure</p>
+              <p>Horror</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <img
+              src="/images/latest and trending/Batman Begin.svg"
+              alt="Title: Batman Begin"
+            />
+            <div class="detail">
+              <p>USA 2018 - Current</p>
+              <h4>Batman Begin</h4>
+              <p>Action,Thriller.</p>
+            </div>
+          </div>
+
+          <div class="card3">
+            <img
+              src="/images/latest and trending/Spider-man Into the spider verse.svg"
+              alt="Title: Spider-man Into the spider verse"
+            />
+            <div class="detail">
+              <p>USA 2019</p>
+              <h4>Spider-man Into the spider verse</h4>
+              <p>Action,Thriller.</p>
+            </div>
+          </div>
+
+          <div class="card4">
+            <img
+              src="/images/latest and trending/Shang-Chi Legend of the ten Rign.svg"
+              alt="Title: Shang-Chi Legend of the ten Rign"
+            />
+            <div class="detail">
+              <p>USA 2020</p>
+              <h4>Shang-Chi Legend of the ten Rign</h4>
+              <p>Action</p>
+            </div>
+          </div>
+
+          <div class="card5">
+            <img src="/images/latest and trending/Dune.svg" alt="Title: Dune" />
+            <div class="detail">
+              <p>USA 2020</p>
+              <h4>Dune</h4>
+              <p>Action,thriller.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- first movie section ends-->
+
+      <!-- second movie section ends -->
+      <section class="bollywood">
+        <div class="headd">
+          <h3>Bollywood</h3>
+          <p>View all</p>
+        </div>
+        <div class="movie-cards">
+          <div class="card1">
+            <img
+              src="/images/Bollywood/Satyamev Jayate.svg"
+              alt="Title: Satyamev Jayate"
+            />
+            <div class="detail">
+              <p>India 2020 - Current</p>
+              <h4>Satyamev Jayate</h4>
+              <p>Action,</p>
+              <p>Adventure</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <img src="/images/Bollywood/Raees.svg" alt="Title: Raees" />
+            <div class="detail">
+              <p>India 2018 - Current</p>
+              <h4>Raees</h4>
+              <p>Action,Thriller.</p>
+            </div>
+          </div>
+
+          <div class="card3">
+            <img
+              src="/images/Bollywood/Bajirao Mastani.svg"
+              alt="Title: Bajirao Mastani"
+            />
+            <div class="detail">
+              <p>India 2020</p>
+              <h4>Bajirao Mastani</h4>
+              <p>Action</p>
+            </div>
+          </div>
+
+          <div class="card4">
+            <img src="/images/Bollywood/Drishyam.svg" alt="Title: Drishyam" />
+            <div class="detail">
+              <p>India 2020</p>
+              <h4>Drishyam</h4>
+              <p>Adventure,Thriller</p>
+            </div>
+          </div>
+
+          <div class="card5">
+            <img
+              src="/images/Bollywood/Kabir singh.svg"
+              alt="Title: Kabir singh"
+            />
+            <div class="detail">
+              <p>India 2020</p>
+              <h4>Kabir singh</h4>
+              <p>Action,emotional</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- second movie section ends -->
+
+      <!-- third movies scetion starts -->
+      <section class="hollywood">
+        <div class="headd">
+          <h3>Hollywood</h3>
+          <p>View all</p>
+        </div>
+        <div class="movie-cards">
+          <div class="card1">
+            <img src="/images/Hollywood/Dunkirk.svg" alt="Title: Dunkirk" />
+            <div class="detail">
+              <p>USA 2016 - Current</p>
+              <h4>Dunkirk</h4>
+              <p>Adventure</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <img
+              src="/images/Hollywood/No Time To Die.svg"
+              alt="Title: No Time To Die"
+            />
+            <div class="detail">
+              <p>USA 2020 - Current</p>
+              <h4>No Time To Die</h4>
+              <p>Adventure,Action.</p>
+            </div>
+          </div>
+
+          <div class="card3">
+            <img
+              src="/images/Hollywood/Don't Breathe.svg"
+              alt="Title: Don't Breathe"
+            />
+            <div class="detail">
+              <p>USA 2019 - Current</p>
+              <h4>Don't Breathe</h4>
+              <p>Adventure,Thriller</p>
+            </div>
+          </div>
+
+          <div class="card4">
+            <img
+              src="/images/Hollywood/Avengers.svg"
+              alt="Title: Avengers-Endgame"
+            />
+            <div class="detail">
+              <p>USA 2019 - Current</p>
+              <h4>Avengers-Endgame</h4>
+              <p>Action</p>
+            </div>
+          </div>
+
+          <div class="card5">
+            <img
+              src="/images/Hollywood/The Outpost.svg"
+              alt="Title: The Outpost"
+            />
+            <div class="detail">
+              <p>India 2020</p>
+              <h4>The Outpost</h4>
+              <p>Adventure,Action</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Third movie section ends -->
+
+      <!-- Fourth movie section starts -->
+      <section class="web">
+        <div class="headd">
+          <h3>Web Series</h3>
+          <p>View all</p>
+        </div>
+        <div class="movie-cards">
+          <div class="card1">
+            <img
+              src="/images/Web Series/Tedbundy Tapes.svg"
+              alt="Title: Tedbundy Tapes"
+            />
+            <div class="detail">
+              <p>USA 2016 - Current</p>
+              <h4>Tedbundy Tapes</h4>
+              <p>Adventure,Action</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <img src="/images/Web Series/Sherlock.svg" alt="Title: Sherlock" />
+            <div class="detail">
+              <p>USA 2016 - Current</p>
+              <h4>Sherlock</h4>
+              <p>Adventure,Action.</p>
+            </div>
+          </div>
+
+          <div class="card3">
+            <img
+              src="/images/Web Series/Live-Telecast.svg"
+              alt="Title: Live-Telecast"
+            />
+            <div class="detail">
+              <p>India 2020 - Current</p>
+              <h4>Live-Telecast</h4>
+              <p>Adventure,Action,Thriller</p>
+            </div>
+          </div>
+
+          <div class="card4">
+            <img
+              src="/images/Web Series/The Fame Game.svg"
+              alt="Title: The Fame Game"
+            />
+            <div class="detail">
+              <p>India 2022 - Current</p>
+              <h4>The Fame Game</h4>
+              <p>Adventage,Action</p>
+            </div>
+          </div>
+
+          <div class="card5">
+            <img src="/images/Web Series/Mirzapur.svg" alt="Title: Mirzapur" />
+            <div class="detail">
+              <p>India 2019 - Current</p>
+              <h4>Mirzapur</h4>
+              <p>Adventure,Action</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fourth Movie section ends -->
+
+      <!-- Fifth Movie section starts -->
+      <section class="anime">
+        <div class="headd">
+          <h3>Anime</h3>
+          <p>View all</p>
+        </div>
+        <div class="movie-cards">
+          <div class="card1">
+            <img
+              src="/images/Anime/Dragon Ball z.svg"
+              alt="Title: Dragon Ball z"
+            />
+            <div class="detail">
+              <p>Japan 2016 - Current</p>
+              <h4>Dragon Ball z</h4>
+              <p>Action</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <img src="/images/Anime/Death Note.svg" alt="Title: Death Note" />
+            <div class="detail">
+              <p>Japan 2017 - Current</p>
+              <h4>Death Note</h4>
+              <p>Action</p>
+            </div>
+          </div>
+
+          <div class="card3">
+            <img
+              src="/images/Anime/One Punch Men.svg"
+              alt="Title: One Punch Men"
+            />
+            <div class="detail">
+              <p>Japan 2017 - Current</p>
+              <h4>One Punch Men</h4>
+              <p>Action</p>
+            </div>
+          </div>
+
+          <div class="card4">
+            <img src="/images/Anime/Avatar.svg" alt="Title: Avatar" />
+            <div class="detail">
+              <p>Japan 2015 - Current</p>
+              <h4>The Fame Game</h4>
+              <p>Action</p>
+            </div>
+          </div>
+
+          <div class="card5">
+            <img src="/images/Anime/Naruto.svg" alt="Title: Naruto" />
+            <div class="detail">
+              <p>Japan 2018 - Current</p>
+              <h4>Naruto</h4>
+              <p>Action</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fifth movie section ends -->
+
+      <!-- Sixth movie section starts -->
+      <section class="show">
+        <div class="headd">
+          <h3>TV Show</h3>
+          <p>View all</p>
+        </div>
+        <div class="movie-cards">
+          <div class="card1">
+            <img
+              src="/images/Tv shows/India's Best Dancer.svg"
+              alt="Title: India's Best Dancer"
+            />
+            <div class="detail">
+              <p>India 2016</p>
+              <h4>India's Best Dancer</h4>
+              <p>Comedy</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <img
+              src="/images/Tv shows/The Kapil Sharma Show.svg"
+              alt="Title: The Kapil Sharma Show"
+            />
+            <div class="detail">
+              <p>India 2015</p>
+              <h4>The Kapil Sharma Show</h4>
+              <p>Comedy</p>
+            </div>
+          </div>
+
+          <div class="card3">
+            <img src="/images/Tv shows/Betal.svg" alt="Title: Betal" />
+            <div class="detail">
+              <p>India 2020</p>
+              <h4>Betal</h4>
+              <p>Action</p>
+            </div>
+          </div>
+
+          <div class="card4">
+            <img src="/images/Tv shows/Friends.svg" alt="Title: Friends" />
+            <div class="detail">
+              <p>USA 2016</p>
+              <h4>Friends</h4>
+              <p>Comedy</p>
+            </div>
+          </div>
+
+          <div class="card5">
+            <img
+              src="/images/Tv shows/Siya Ke Raam.svg"
+              alt="Title: Siya Ke Raam"
+            />
+            <div class="detail">
+              <p>India 2014</p>
+              <h4>Siya Ke Raam</h4>
+              <p>Adventure</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sixth movie section ends -->
+      <!-- footer -->
+    </main>
+    <footer>
+      <div class="foot-container">
+        <div class="socials">
+          <ul>
+            <li>
+              <img src="/images/socials/Vector (2).svg" /><a
+                href="www.facebook.com"
+              ></a>
+            </li>
+            <li>
+              <img src="/images/socials/Vector (1).svg" /><a
+                href="www.instagram.com"
+              ></a>
+            </li>
+            <li>
+              <img src="/images/icon/Vector.svg" /><a href="www.twiter.com"></a>
+            </li>
+            <li>
+              <img src="/images/socials/Vector (3).svg" /><a
+                href="www.youtube.com"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="company-details">
+          <p>Conditions of Use</p>
+          <p>Privacy & Policy</p>
+          <p>Press Room</p>
+        </div>
+        <p>© 2020 MovieVilla by Tanmay Jitendra Thakare</p>
+      </div>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>

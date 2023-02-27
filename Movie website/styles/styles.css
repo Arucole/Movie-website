@@ -1,0 +1,888 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300&family=Public+Sans:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #010101;
+  --white: #ffffff;
+  --gray: #c7c7c7;
+}
+
+/* header  */
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--background);
+  color: var(--white);
+}
+
+header .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 35px;
+  left: 1%;
+}
+
+:hover.Hamburger {
+  cursor: pointer;
+}
+
+#mobiletopnav {
+  display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  height: 2px;
+  width: 30px;
+  color: var(--white);
+  background-color: var(--white);
+  position: relative;
+  margin: 2px 0;
+}
+
+.company-logo {
+  /* margin: 10px 0; */
+  position: absolute;
+  left: 9%;
+  top: 10px;
+}
+
+.list ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.list li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 15px;
+  /* padding: auto 10px; */
+}
+
+.list li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+:hover li {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 0.5rem;
+}
+
+.search input {
+  background-color: var(--background);
+  color: var(--white);
+  border: 0 solid var(--background);
+  margin: 2rem auto;
+  position: relative;
+  right: 15px;
+}
+
+:hover input {
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0.5rem;
+  padding: 5px 10px;
+}
+
+.details button {
+  height: 1.5rem;
+  width: 6rem;
+  color: var(--white);
+  background-color: var(--background);
+  border-radius: 15px;
+  font-weight: 500;
+  border: 1px solid var(--white);
+  position: relative;
+  right: 20px;
+}
+
+:hover button {
+  cursor: pointer;
+  color: var(--gray);
+}
+
+.details P {
+  font-weight: 600;
+  position: relative;
+  left: 0.5rem;
+}
+
+:hover .details p {
+  cursor: pointer;
+}
+
+/* body */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+  color: var(--white);
+  height: 100vh;
+  width: 100vw;
+}
+
+/* carousel */
+
+.slideshow-container {
+  /* max-width: 1000px; */
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: auto;
+}
+
+.theslides img {
+  height: 42rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.theslides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.indicator {
+  display: flex;
+  justify-content: center;
+  flex-shrink: inherit;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #f62929;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* movie cards */
+
+.latest,
+.bollywood,
+.hollywood,
+.web,
+.anime,
+.show {
+  margin: 0.5rem auto;
+  padding: 5rem 5rem;
+}
+
+.headd {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5rem 5rem;
+  margin: 2rem -3rem;
+}
+
+.headd h3 {
+  font-size: 40px;
+}
+
+:hover h3 {
+  cursor: pointer;
+}
+
+.headd p {
+  font-size: 15px;
+  position: relative;
+  top: 1.5rem;
+}
+
+:hover p {
+  cursor: pointer;
+}
+
+.movie-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card1 img {
+  border-radius: 20px;
+  height: 250px;
+  width: 200px;
+}
+
+.card2 img {
+  border-radius: 20px;
+  height: 250px;
+  width: 200px;
+}
+
+.card3 img {
+  border-radius: 20px;
+  height: 250px;
+  width: 200px;
+}
+
+.card4 img {
+  border-radius: 20px;
+  height: 250px;
+  width: 200px;
+}
+
+.card5 img {
+  border-radius: 20px;
+  height: 250px;
+  width: 200px;
+}
+
+.detail p {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--gray);
+  width: 70px;
+  margin: 0.5rem 2rem;
+}
+
+.detail h4 {
+  width: 100px;
+  margin: auto 2rem;
+}
+
+:hover h4 {
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: var(--background);
+}
+
+.foot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.socials ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socials li {
+  height: 5px;
+  list-style: none;
+  margin: 3rem 1rem;
+}
+
+.company-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+}
+
+:hover .company-details {
+  cursor: pointer;
+}
+
+.company-details p {
+  margin: 1rem 1.5rem;
+}
+
+:hover p {
+  cursor: pointer;
+}
+
+@media all and (max-width: 1083px) {
+  .slideshow-container {
+    margin-top: -3rem;
+  }
+  .indicator {
+    margin-top: -1.5rem;
+  }
+}
+
+@media all and (max-width: 1111px) {
+  .slideshow-container {
+    margin-top: -3rem;
+  }
+  .indicator {
+    margin-top: -1.5rem;
+  }
+}
+
+@media all and (max-width: 1370px) {
+  .slideshow-container {
+    margin-top: -2rem;
+  }
+  .indicator {
+    margin-top: -2rem;
+  }
+
+  .company-logo {
+    margin: 0 15px;
+    position: absolute;
+    left: 6%;
+  }
+}
+
+@media all and (max-width: 1248px) {
+  .slideshow-container {
+    margin-top: -4rem;
+  }
+  .indicator {
+    margin-top: -3rem;
+  }
+
+  .company-logo {
+    margin: 0 15px;
+  }
+
+  .movie-cards {
+    margin-top: -2rem;
+  }
+
+  .card1 img {
+    height: 200px;
+    width: 150px;
+  }
+
+  .card2 img {
+    height: 200px;
+    width: 150px;
+  }
+
+  .card3 img {
+    height: 200px;
+    width: 150px;
+  }
+
+  .card4 img {
+    height: 200px;
+    width: 150px;
+  }
+
+  .card5 img {
+    height: 200px;
+    width: 150px;
+  }
+}
+
+@media all and (max-width: 1153px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  header .head {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 90%;
+  }
+
+  .slideshow-container {
+    margin-top: -4rem;
+  }
+  .indicator {
+    margin-top: -3rem;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .details {
+    display: none;
+  }
+
+  #mobiletopnav {
+    display: block;
+  }
+}
+
+@media all and (max-width: 980px) {
+  body {
+    align-content: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .slideshow-container {
+    margin-top: -7rem;
+  }
+  .indicator {
+    margin-top: -5rem;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 90%;
+  }
+
+  .headd h3 {
+    font-size: 14px;
+    margin: 10px 13px;
+  }
+
+  .headd p {
+    font-size: 9px;
+    margin: 13px 11px;
+  }
+
+  .movie-cards {
+    margin-top: -2rem;
+  }
+
+  .card1 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .card2 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .card3 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .card4 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .card5 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .detail {
+    display: none;
+  }
+
+  .latest,
+  .bollywood,
+  .hollywood,
+  .web,
+  .anime,
+  .show {
+    margin: -4rem auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .socials {
+    margin: 30px 0;
+  }
+
+  .socials li img {
+    height: 15px;
+    width: 15px;
+    margin: -5px -10px -40px -5px;
+  }
+
+  .company-details p {
+    font-size: 10px;
+    margin: -10px 5px 0 5px;
+  }
+
+  .foot-container {
+    padding: 0 20px;
+    margin: 0 10px;
+    font-size: 10px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media all and (max-width: 764px) {
+  body {
+    align-content: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .slideshow-container {
+    margin-top: -10rem;
+  }
+  .indicator {
+    margin-top: -9rem;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 80%;
+  }
+
+  .headd h3 {
+    font-size: 14px;
+    margin: 10px -11px;
+  }
+
+  .headd p {
+    font-size: 9px;
+    margin: 13px -11px;
+  }
+
+  .movie-cards {
+    margin-top: -2rem;
+  }
+
+  .card1 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .card2 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .card3 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .card4 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .card5 img {
+    height: 150px;
+    width: 100px;
+  }
+
+  .detail {
+    display: none;
+  }
+
+  .latest,
+  .bollywood,
+  .hollywood,
+  .web,
+  .anime,
+  .show {
+    margin: -4rem auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .socials {
+    margin: 30px 0;
+  }
+
+  .socials li img {
+    height: 15px;
+    width: 15px;
+    margin: -5px -10px -40px -5px;
+  }
+
+  .company-details p {
+    font-size: 10px;
+    margin: -10px 5px 0 5px;
+  }
+
+  .foot-container {
+    padding: 0 20px;
+    margin: 0 10px;
+    font-size: 10px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media all and (max-width: 584px) {
+  body {
+    align-content: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .slideshow-container {
+    margin-top: -13rem;
+  }
+  .indicator {
+    margin-top: -11rem;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 90%;
+  }
+
+  .headd h3 {
+    font-size: 14px;
+    margin: 10px -5px;
+  }
+
+  .headd p {
+    font-size: 9px;
+    margin: 13px -5px;
+  }
+
+  .movie-cards {
+    margin-top: -2rem;
+  }
+
+  .card1 img {
+    height: 100px;
+    width: 70px;
+  }
+
+  .card2 img {
+    height: 100px;
+    width: 70px;
+  }
+
+  .card3 img {
+    height: 100px;
+    width: 70px;
+  }
+
+  .card4 img {
+    height: 100px;
+    width: 70px;
+  }
+
+  .card5 img {
+    height: 100px;
+    width: 70px;
+  }
+
+  .detail {
+    display: none;
+  }
+
+  .latest,
+  .bollywood,
+  .hollywood,
+  .web,
+  .anime,
+  .show {
+    margin: -4rem auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .socials {
+    margin: 30px 0;
+  }
+
+  .socials li img {
+    height: 15px;
+    width: 15px;
+    margin: -5px -10px -40px -5px;
+  }
+
+  .company-details p {
+    font-size: 10px;
+    margin: -10px 5px 0 5px;
+  }
+
+  .foot-container {
+    padding: 0 20px;
+    margin: 0 10px;
+    font-size: 10px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  body {
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .slideshow-container {
+    margin-top: -16rem;
+  }
+  .indicator {
+    margin-top: -13rem;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 80%;
+  }
+
+  .headd h3 {
+    font-size: 14px;
+    margin: 10px -11px;
+  }
+
+  .headd p {
+    font-size: 9px;
+    margin: 13px -11px;
+  }
+
+  .movie-cards {
+    margin-top: -2rem;
+  }
+
+  .card1 img {
+    height: 100px;
+    width: 50px;
+  }
+
+  .card2 img {
+    height: 100px;
+    width: 50px;
+  }
+
+  .card3 img {
+    height: 100px;
+    width: 50px;
+  }
+
+  .card4 img {
+    height: 100px;
+    width: 50px;
+  }
+
+  .card5 img {
+    height: 100px;
+    width: 50px;
+  }
+
+  .detail {
+    display: none;
+  }
+
+  .latest,
+  .bollywood,
+  .hollywood,
+  .web,
+  .anime,
+  .show {
+    margin: -4rem auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .socials {
+    margin: 30px 0;
+  }
+
+  .socials li img {
+    height: 15px;
+    width: 15px;
+    margin: -5px -10px -40px -5px;
+  }
+
+  .company-details p {
+    font-size: 10px;
+    margin: -10px 5px 0 5px;
+  }
+
+  .foot-container {
+    padding: 0 20px;
+    margin: 0 10px;
+    font-size: 10px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
